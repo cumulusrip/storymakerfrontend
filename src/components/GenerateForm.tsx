@@ -117,7 +117,7 @@ const GenerateForm = () => {
 
       {result && (
         <div className="space-y-6">
-          {/* Script */}
+  
           <div className="bg-gray-800 p-4 rounded-lg shadow">
             <h2 className="text-lg font-bold mb-2">Generated Script</h2>
             <p>{result.script}</p>
@@ -129,13 +129,6 @@ const GenerateForm = () => {
             <audio ref={audioRef} controls src={`http://localhost:8001${result.audio_url}`} className="w-full" />
           </div>
 
-          {/* {warning && (
-            <div className="bg-red-600 p-2 rounded text-sm">
-              {warning}
-            </div>
-          )} */}
-
-          {/* Select Image */}
           <div>
             <h2 className="text-lg font-bold mb-2">Select an Image</h2>
             <div className="flex space-x-4">
@@ -152,7 +145,6 @@ const GenerateForm = () => {
             </div>
           </div>
 
-          {/* Select Video */}
           <div>
             <h2 className="text-lg font-bold mb-2">Select a Video</h2>
             <div className="flex space-x-4">
@@ -171,7 +163,6 @@ const GenerateForm = () => {
             </div>
           </div>
 
-          {/* Create Final Video */}
       {(selectedImage !== null || selectedVideo !== null) && (
   <div className="mt-4 flex flex-col items-center space-y-2">
     <button
